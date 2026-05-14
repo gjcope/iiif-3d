@@ -24,7 +24,10 @@
                 "type": "Model",
                 "format": "model/gltf-binary"
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id" : "https://example.org/iiif/scene1",
+                "type" : "Scene"
+              }
             },
             {
               "id": "https://example.org/iiif/3d/anno2",
@@ -40,21 +43,18 @@
                 }
               },
               "target": {
+                "id"  : "https://example.org/iiif/specificresource/1",
                 "type": "SpecificResource",
-                "source": [
-                  {
+                "source": {
                     "id": "https://example.org/iiif/scene1",
                     "type": "Scene"
-                  }
-                ],
-                "selector": [
-                  {
+                  },
+                "selector":  {
                     "type": "PointSelector",
                     "x": 0.0,
                     "y": 3.0,
                     "z": -10.0
-                  }
-                ]
+                }
               }
             }
           ]
