@@ -6,7 +6,7 @@
     "summary": { "en": ["Viewer should render the model at the scene origin and an Orthographic camera looking at the model, and add default lighting."] },
     "items": [
       {
-        "id": "https://example.org/iiif/scene1/page/p1/1",
+        "id": "https://example.org/iiif/scene1/scene/1",
         "type": "Scene",
         "items": [
           {
@@ -22,7 +22,10 @@
                   "type": "Model",
                 "format": "model/gltf-binary"
                 },
-                "target": "https://example.org/iiif/scene1/page/p1/1"
+                "target": {
+                    "id" : "https://example.org/iiif/scene1/scene/1",
+                    "type" : "Scene"
+                }
               },
               {
                 "id": "https://example.org/iiif/3d/anno3",
@@ -38,21 +41,18 @@
                   }
                 },
                 "target": {
+                  "id"  : "https://example.org/iiif/specificresource/1",
                   "type": "SpecificResource",
-                  "source": [
-                    {
-                      "id": "https://example.org/iiif/scene1/page/p1/1",
+                  "source":  {
+                      "id": "https://example.org/iiif/scene1/scene/1",
                       "type": "Scene"
-                    }
-                  ],
-                  "selector": [
-                    {
+                  },
+                  "selector":{
                       "type": "PointSelector",
                       "x": 0.0,
                       "y": 3.0,
                       "z": -10.0
-                    }
-                  ]
+                  }
                 }
               }
             ]

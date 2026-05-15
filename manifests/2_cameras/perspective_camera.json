@@ -23,7 +23,10 @@
                 "type": "Model",
                 "format": "model/gltf-binary"
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id" : "https://example.org/iiif/scene1",
+                "type" : "Scene"
+              }
             },
             {
               "id": "https://example.org/iiif/3d/anno2",
@@ -34,7 +37,10 @@
                 "type": "PerspectiveCamera",
                 "label": {"en": ["Perspective Camera 1"]}
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id" : "https://example.org/iiif/scene1",
+                "type" : "Scene"
+              }
             }
           ]
         }
