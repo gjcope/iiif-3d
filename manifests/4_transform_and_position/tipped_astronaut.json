@@ -6,7 +6,7 @@
   "summary": { "en": ["Astronaut with rotation property defined in glb file"] },
   "items": [
     {
-      "id": "https://example.org/iiif/scene1/page/p1/1",
+      "id": "https://example.org/iiif/scene1",
       "type": "Scene",
       "label": { "en": ["A Scene"] },
       "items": [
@@ -22,8 +22,11 @@
                 "id": "https://raw.githubusercontent.com/IIIF/3d/main/assets/astronaut/tipped_astronaut.glb",
                 "type": "Model",
                 "format": "model/gltf-binary"
-                },
-              "target": "https://example.org/iiif/scene1/page/p1/1"
+              },
+              "target": {
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
+              }
             },
             {
               "id": "https://example.org/iiif/3d/anno1",
@@ -33,22 +36,21 @@
                 "id": "https://raw.githubusercontent.com/IIIF/3d/main/assets/lamp_post/lamp_post.glb",
                 "type": "Model",
                 "format": "model/gltf-binary",
-                "rights" : "https://creativecommons.org/licenses/by/4.0/",
-                "metadata" : [
-                    {
-                        "label": { "en": [ "Attribution" ] },
-                        "value": { "none": [ "https://sketchfab.com/3d-models/old-fashioned-streetlamp-e98ebb84f03142618eb958817fe86967" ] }
-                    }
+                "rights": "https://creativecommons.org/licenses/by/4.0/",
+                "metadata": [
+                  {
+                    "label": { "en": ["Attribution"] },
+                    "value": { "none": ["https://sketchfab.com/3d-models/old-fashioned-streetlamp-e98ebb84f03142618eb958817fe86967"] }
+                  }
                 ]
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno1/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1/page/p1/1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
@@ -59,7 +61,6 @@
                 ]
               }
             }
-            
           ]
         }
       ]

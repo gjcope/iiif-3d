@@ -36,7 +36,10 @@
                 "type": "Model",
                 "format": "model/gltf-binary"
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
+              }
             },
             {
               "id": "https://example.org/iiif/3d/anno2",
@@ -47,6 +50,7 @@
                 "type": "Canvas"
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno2/target",
                 "type": "SpecificResource",
                 "source": {
                   "id": "https://example.org/iiif/scene1",
@@ -94,10 +98,13 @@
                   }
                 ]
               },
-              "target": "https://example.org/iiif/canvas/1"            
+              "target": {
+                "id": "https://example.org/iiif/canvas/1",
+                "type": "Canvas"
+              }
             }
           ]
-        } 
+        }
       ]
     }
   ]

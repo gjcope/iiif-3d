@@ -23,7 +23,10 @@
                 "type": "Model",
                 "format": "model/gltf-binary"
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
+              }
             }
           ]
         }
@@ -37,15 +40,17 @@
               "id": "https://example.org/iiif/3d/anno2",
               "type": "Annotation",
               "motivation": ["commenting"],
-              "bodyValue": "Glove",
+              "body": {
+                "type": "TextualBody",
+                "value": "Glove"
+              },
               "target": {
+                "id": "https://example.org/iiif/3d/anno2/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
@@ -60,15 +65,17 @@
               "id": "https://example.org/iiif/3d/anno3",
               "type": "Annotation",
               "motivation": ["commenting"],
-              "bodyValue": "Helmet",
+              "body": {
+                "type": "TextualBody",
+                "value": "Helmet"
+              },
               "target": {
+                "id": "https://example.org/iiif/3d/anno3/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
