@@ -42,20 +42,18 @@
                 }
               },
               "target": {
-                "id": "https://example.org/iiif/3d/anno2/target",
+                "id"  : "https://example.org/iiif/specificresource/1",
                 "type": "SpecificResource",
                 "source": {
-                  "id": "https://example.org/iiif/scene1",
-                  "type": "Scene"
-                },
-                "selector": [
-                  {
+                    "id": "https://example.org/iiif/scene1",
+                    "type": "Scene"
+                  },
+                "selector":  {
                     "type": "PointSelector",
                     "x": 0.0,
                     "y": 3.0,
                     "z": -10.0
-                  }
-                ]
+                }
               }
             }
           ]
