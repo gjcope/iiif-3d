@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/4/context.json",
-  "id": "https://example.org/iiif/3d/model_origin.json",
+  "id": "https://example.org/iiif/3d/astronaut_multilingual_comment.json",
   "type": "Manifest",
   "label": {
     "en": ["Single Model with Multilingual Comment Annotations"],

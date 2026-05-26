@@ -52,14 +52,14 @@
                     "type": "Scene"
                   }
                 ,
-                "selector": 
+                "selector": [
                   {
                     "type": "PointSelector",
                     "x": 0.0,
                     "y": 3.0,
                     "z": -10.0
                   }
-                
+                ]
               }
             }
           ]

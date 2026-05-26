@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/4/context.json",
-  "id": "https://example.org/iiif/3d/model_origin.json",
+  "id": "https://example.org/iiif/3d/tipped_and_rotated_astronaut.json",
   "type": "Manifest",
   "label": { "en": ["glTF rotation property - IIIF transform demonstration"] },
   "summary": { "en": ["Astronaut with rotation property defined in glb file and counteracting IIIF transform"] },

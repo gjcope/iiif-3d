@@ -68,7 +68,7 @@
                 "id": "https://example.org/iiif/specificresource/1",
                 "type": "SpecificResource",
                 "source": {
-                    "id": "https://example.org/iiif/scene1/1",
+                    "id": "https://example.org/iiif/scene1",
                     "type": "Scene"
                   },
                 "selector": {
