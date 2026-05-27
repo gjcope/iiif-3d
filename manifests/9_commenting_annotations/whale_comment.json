@@ -24,13 +24,12 @@
                 "format": "model/gltf-binary"
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno1/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
@@ -51,13 +50,12 @@
                 "format": "model/gltf-binary"
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno2/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
@@ -80,15 +78,17 @@
               "id": "https://example.org/iiif/3d/anno3",
               "type": "Annotation",
               "motivation": ["commenting"],
-              "bodyValue": "Right pterygoid hamulus",
+              "body": {
+                "type": "TextualBody",
+                "value": "Right pterygoid hamulus"
+              },
               "target": {
+                "id": "https://example.org/iiif/3d/anno3/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",
@@ -96,7 +96,7 @@
                     "y": 0.063,
                     "z": -0.066
                   }
-                ]   
+                ]
               }
             }
           ]

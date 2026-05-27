@@ -9,7 +9,6 @@
       "id": "https://example.org/iiif/scene1",
       "type": "Scene",
       "label": { "en": ["Scene with Model and Camera"] },
-
       "items": [
         {
           "id": "https://example.org/iiif/scene1/page/p1/1",
@@ -25,8 +24,8 @@
                 "format": "model/gltf-binary"
               },
               "target": {
-                "id" : "https://example.org/iiif/scene1",
-                "type" : "Scene"
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
               }
             },
             {
@@ -49,12 +48,14 @@
                     "id": "https://example.org/iiif/scene1",
                     "type": "Scene"
                   },
-                "selector":  {
+                "selector": [
+                  {
                     "type": "PointSelector",
                     "x": 0.0,
                     "y": 3.0,
                     "z": -10.0
-                }
+                  }
+                ]
               }
             }
           ]

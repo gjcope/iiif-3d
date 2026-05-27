@@ -24,13 +24,12 @@
                 "format": "model/gltf-binary"
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno1/target",
                 "type": "SpecificResource",
-                "source": [
-                  {
-                    "id": "https://example.org/iiif/scene1",
-                    "type": "Scene"
-                  }
-                ],
+                "source": {
+                  "id": "https://example.org/iiif/scene1",
+                  "type": "Scene"
+                },
                 "selector": [
                   {
                     "type": "PointSelector",

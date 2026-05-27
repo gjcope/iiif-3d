@@ -10,7 +10,7 @@
   },
   "items": [
     {
-      "id": "https://example.org/iiif/scene1/1",
+      "id": "https://example.org/iiif/scene1",
       "type": "Scene",
       "items": [
         {
@@ -27,11 +27,10 @@
                 "format": "model/gltf-binary"
               },
               "target": {
-                "id" : "https://example.org/iiif/scene1/1",
-                "type" : "Scene"
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
               }
             },
-
             {
               "id": "https://example.org/iiif/3d/anno2",
               "type": "Annotation",
@@ -69,7 +68,7 @@
                 "id": "https://example.org/iiif/specificresource/1",
                 "type": "SpecificResource",
                 "source": {
-                    "id": "https://example.org/iiif/scene1/1",
+                    "id": "https://example.org/iiif/scene1",
                     "type": "Scene"
                   },
                 "selector": {

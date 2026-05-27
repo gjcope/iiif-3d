@@ -9,7 +9,6 @@
       "id": "https://example.org/iiif/scene1",
       "type": "Scene",
       "label": { "en": ["Scene with Model and DirectionalLight"] },
-  
       "items": [
         {
           "id": "https://example.org/iiif/scene1/page/p1/1",
@@ -24,22 +23,26 @@
                 "type": "Model",
                 "format": "model/gltf-binary"
               },
-              "target": "https://example.org/iiif/scene1"
+              "target": {
+                "id": "https://example.org/iiif/scene1",
+                "type": "Scene"
+              }
             },
             {
               "id": "https://example.org/iiif/3d/anno2",
               "type": "Annotation",
               "motivation": ["painting"],
               "body": {
-                    "id": "https://example.org/iiif/3d/lights/1",
-                    "type": "DirectionalLight",
-                    "label": {"en": ["Directional Light 1"]},
-                    "lookAt": {
-                      "id": "https://example.org/iiif/3d/anno1",
-                      "type": "Annotation"
-                    }
+                "id": "https://example.org/iiif/3d/lights/1",
+                "type": "DirectionalLight",
+                "label": {"en": ["Directional Light 1"]},
+                "lookAt": {
+                  "id": "https://example.org/iiif/3d/anno1",
+                  "type": "Annotation"
+                }
               },
               "target": {
+                "id": "https://example.org/iiif/3d/anno2/target",
                 "type": "SpecificResource",
                 "source": {
                   "id": "https://example.org/iiif/scene1",
